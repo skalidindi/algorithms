@@ -1,0 +1,24 @@
+[project]
+name = "algorithms"
+version = "0.1.0"
+description = "Practice Algos"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = ["bitarray>=3.4.3"]
+
+[dependency-groups]
+dev = ["ruff>=0.12.1", "ty>=0.0.1a12"]
+
+[project.scripts]
+binary_search = "search.binary_search:main"
+bloom_filter = "sets.bloom_filter:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["set", "sorting", "search"]
+
+[tool.ruff]
+line-length = 100
