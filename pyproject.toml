@@ -17,8 +17,12 @@ dev = ["ruff>=0.12.1", "ty>=0.0.1a12"]
 binary_search = "search.binary_search:main"
 bloom_filter = "sets.bloom_filter:main"
 
+[project.urls]
+Homepage = "https://github.com/skalidindi/algorithms"
+Repository = "https://github.com/skalidindi/algorithms"
+
+[tool.hatch.build]
+sources = ["src"]
+
 [tool.hatch.build.targets.wheel]
 packages = ["src/set", "src/sorting", "src/search"]
-
-[tool.ruff]
-line-length = 100
