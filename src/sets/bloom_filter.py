@@ -60,3 +60,7 @@ def main():
 
     # A word not added might still return True due to false positives
     print("pineapple" in bf)  # Might be True (false positive)
+
+
+if __name__ == "__main__":
+    main()

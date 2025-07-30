@@ -1,4 +1,7 @@
-def binary_search(arr, target):
+from typing import List
+
+
+def binary_search(arr: List[int], target: int):
     low = 0
     high = len(arr) - 1
 
@@ -20,3 +23,7 @@ def binary_search(arr, target):
 # ---------------------------
 def main():
     print(binary_search([1, 2, 3, 4, 5, 7, 9, 30, 50], 30))
+
+
+if __name__ == "__main__":
+    main()

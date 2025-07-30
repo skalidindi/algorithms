@@ -16,6 +16,10 @@ dev = ["ruff>=0.12.1", "ty>=0.0.1a12"]
 [project.scripts]
 binary_search = "search.binary_search:main"
 bloom_filter = "sets.bloom_filter:main"
+selection_sort = "sorting.selection_sort:main"
+bubble_sort = "sorting.bubble_sort:main"
+insertion_sort = "sorting.insertion_sort:main"
+heap_sort = "sorting.heap_sort:main"
 
 [project.urls]
 Homepage = "https://github.com/skalidindi/algorithms"
